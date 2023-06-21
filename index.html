@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>7 Wonders of the World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>7 Wonders of the World</h1>
+  <div class="wonders-container">
+    <div class="wonder-card" onclick="showDetails(0)">
+        <img src="images/WallChina.jpg" alt="Wonder 2">
+        <h2>Great Wall of China</h2>
+      </div>
+      <div class="wonder-card" onclick="showDetails(1)">
+        <img src="images/Petra.jpg" alt="Wonder 2">
+        <h2>Petra</h2>
+      </div>
+      <div class="wonder-card" onclick="showDetails(2)">
+        <img src="images/Colosseum.jpg" alt="Wonder 2">
+        <h2>Colosseum</h2>
+      </div>
+      <div class="wonder-card" onclick="showDetails(3)">
+        <img src="images/ChichenItza.jpg" alt="Wonder 2">
+        <h2>Chichen Itza</h2>
+      </div>
+      <div class="wonder-card" onclick="showDetails(4)">
+        <img src="images/MachuPicchu.jpg" alt="Wonder 2">
+        <h2>Machu Picchu</h2>
+      </div>
+    <div class="wonder-card" onclick="showDetails(5)">
+      <img src="images/TajMahal.jpg" alt="Wonder 1">
+      <h2>Taj Mahal</h2>
+    </div>
+    <div class="wonder-card" onclick="showDetails(6)">
+        <img src="images/christ1.jpg" alt="Wonder 2">
+        <h2>Christ the Redeemer</h2>
+      </div>
+
+
+
+
+    <!-- Repeat the above div for all 7 wonders -->
+  </div>
+
+  <div id="details-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-button" onclick="hideDetails()">&times;</span>
+      <h2 id="wonder-title"></h2>
+      <img id="wonder-image" src="" alt="">
+      <p id="wonder-description"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
